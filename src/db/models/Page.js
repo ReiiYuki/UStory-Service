@@ -26,6 +26,16 @@ const Page = db.model('Page',{
     type : Boolean,
     required : true,
     default : false
+  },
+  createdDate : {
+    type : Date,
+    required : true,
+    default : Date.now
+  },
+  updatedDate : {
+    type : Date,
+    required : true,
+    default : Date.now
   }
 })
 

@@ -26,7 +26,17 @@ const Site = db.model('Site',{
       type : db.Schema.Types.ObjectId,
       ref : 'Page'
     }
-  ]
+  ],
+  createdDate : {
+    type : Date,
+    required : true,
+    default : Date.now
+  },
+  updatedDate : {
+    type : Date,
+    required : true,
+    default : Date.now
+  }
 })
 
 export default Site

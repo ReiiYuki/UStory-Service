@@ -15,6 +15,16 @@ const Component = db.model('Component',{
     type : Boolean,
     required : true,
     default : true
+  },
+  createdDate : {
+    type : Date,
+    required : true,
+    default : Date.now
+  },
+  updatedDate : {
+    type : Date,
+    required : true,
+    default : Date.now
   }
 })
 
